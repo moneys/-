@@ -1,2 +1,3 @@
-# -
-html,css,javascript....各种流行前端技术,都拉出来溜溜
+# 我要学前端
+
+![教练,我想学](./image/ball.jpg)
