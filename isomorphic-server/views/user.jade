@@ -3,6 +3,13 @@ extends layout
 block content
     h1= title
     p Welcome to #{title}
-    div
-    each user,index in users
-        p #{index} | #{user.name}
+    table(style='border:solid 1px pink')
+        thead
+            th 序号
+            th 姓名
+            th 年龄
+        each user,index in users
+            tr
+                td #{index}
+                td #{user.name}
+                td #{user.age}
