@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 const fs = require('fs');
 const join = require('path').join;
+require('node-jsx').install();
 const models = join(__dirname, 'modles');
 fs.readdirSync(models)
     .filter(file => ~file.search(/^[^\.].*\.js$/))
@@ -22,6 +23,8 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+// app.engine('jade', require('jade')._express );
+// app.engine( 'ejs', require('ejs')._express )
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
