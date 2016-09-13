@@ -1,15 +1,17 @@
-$bodyColor: pink;
-$divColor: blue;
+@import "../variables";
+
+$divColor: lightblue;
+$demoColor: seashell;
+
 @mixin divFacade($width:100px,$height:100px,$color:yellow) {
   width: $width;
   height: $height;
   background-color: $color;
 }
 
-body {
-  background: $bodyColor;
-}
-
 div {
   @include divFacade(330px, 140px, $divColor)
+}
+.demo {
+  background-color: $demoColor;
 }
