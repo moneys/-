@@ -13,18 +13,8 @@ module.exports = {
     },
     module: {
         loaders: [
-            {
-                test: /\.scss$/,
-                loaders: ["style", "css", "sass"]
-            },
-            {
-                test: /\.js?$/,
-                exclude: /node_modules/,
-                loader: 'babel',
-                query: {
-                    presets: ['react', 'es2015']
-                }
-            }
+            {test: /\.scss$/, loaders: ["style", "css", "sass"]},
+            {test: /\.js?$/, exclude: /node_modules/, loader: 'babel', query: {presets: ['react', 'es2015']}}
         ]
     },
     plugins: [
