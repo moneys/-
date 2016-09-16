@@ -9,9 +9,11 @@ $demoColor: seashell;
   background-color: $color;
 }
 
-div {
+.div {
   @include divFacade(330px, 140px, $divColor)
 }
 .demo {
+  width: 450px;
+  height: 140px;
   background-color: $demoColor;
 }
