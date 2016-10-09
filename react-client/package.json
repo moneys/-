@@ -5,6 +5,9 @@
     "build": "webpack",
     "start": "webpack-dev-server"
   },
+  "dependencies": {
+    "react-router": "^2.0.0"
+  },
   "devDependencies": {
     "node-sass": "^3.9.3",
     "sass-loader": "^4.0.2",

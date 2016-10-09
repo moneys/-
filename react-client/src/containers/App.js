@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from "react";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
+import {Link} from "react-router";
 import Demo from "../components/Demo/Demo";
 import * as DemoActions from "../actions/users";
 
@@ -10,6 +11,7 @@ class App extends Component {
         const {users, actions} = this.props
         return (<div>
             <div>这是外层容器,用来放置组件</div>
+            <Link to="/about">About</Link>
             <Demo users={users} actions={actions}/>
         </div>);
     }
